@@ -12,6 +12,13 @@
 }
 
 /*common layout classes*/
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
 
 .container {
   max-width: 100%;
@@ -19,6 +26,16 @@
   margin: 0 auto; /*to center the element */
   padding: 0 10%;
 }
+.most-loved {
+  max-width: 100%;
+  background-color: white;
+  padding: 0% 0% 0% 0;
+  font-size: 33px;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .website-header {
   display: flex;
   flex-direction: row;
@@ -164,13 +181,12 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-section h2 {
+.newsletter h2 {
   text-align: center;
-}
-h2 {
-  font-size: 2.5rem;
+  font-family: Playfair Display Web, serif;
+  
+  font-size: 2.4rem;
   font-style: italic;
-  margin-bottom: 1.5rem;
 }
 
 .products {
@@ -262,25 +278,101 @@ h2 {
 
 /* Here starts another section of the website*/
 
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
+.carousel-cell h3 {
+  color: #e2574c;
+  font-size: 24px;
+}
 .newsletter {
-  background-image: url(../images/wave-bkgd.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../images/wave-bkgd.jpg);
   background-position: 40% 100%;
   color: #fff;
   text-align: -webkit-center;
+  
+}
+.sign-up{
+  display: flex;
+  flex-direction: column;
 }
 .newsletter p {
-  padding: 0 50px;
+  padding: 0 10%;
   line-height: 2;
+
+}
+.email-box {
+  display: block;
+  margin: 2rem auto 0;
+ 
+ 
+}
+input[type="email"] {
+  padding: 1rem 1.75rem;
+  padding-right: 2px;
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  position: relative;
+  font-size: 1rem;
+
 }
 
+input[type="submit"] {
+  background-color: #e2574c;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    right: .6rem;
+    top: 0.4rem;
+    border-radius: 30px;
+    font-family: Raleway Web, sans-serif;
+    font-size: 1rem;
+
+}
+
+
+/*input[type="submit"] {
+  background-color: #e2574c;
+  color: white;
+  font-weight: 700;
+  padding: 2vmax 5vmax;
+
+  position: absolute;
+  border-radius: 30px;
+  right: 0.55vmax;
+  top: 0.1vmax;
+  display: inline-block;
+}
 /* footer*/
 .father {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: black;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #242424;
   color: white;
-  padding: 64px;
+  padding: 30px;
+  height: 60vmax;
+}
+.footer-icons{
+  list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+}
+
+
+
+.item2{
+  display: flex;
+  width: 10vmax;
+  flex-direction: row;
+  align-self: center;
+ 
 }
 
 .fab {
@@ -366,6 +458,12 @@ h2 {
     height: auto;
     width: 100%;
   }
+  .item2 {
+    display: flex;
+    width: 10vmax;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 
   .fab {
     display: block;
@@ -406,4 +504,21 @@ h2 {
   .product-item:nth-child(6) {
     width: 50%;
   }
-}
+
+  .carousel-cell {
+    width: 25%;
+  }
+
+  sign-up {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 30%;
+
+  .newsletter p {
+    padding: 0 20%;
+
+  input[type="submit"]{
+    right: 4.6rem;
+    
+  }
+
