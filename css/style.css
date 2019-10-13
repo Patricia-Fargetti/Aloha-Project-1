@@ -117,22 +117,19 @@ section {
 /* header area */
 
 /* banner area */
-
-.banner {
-  background-size: 250px 615px, contain;
-  position: relative;
-  width: 100%;
+.banner{
+  background-size: cover,150px 369px,cover;
   height: 400px;
-  background-image: url(../images/banner-girl.png),
-    url(../images/flower-bkgd.jpg);
-
-  background-repeat: no-repeat, no-repeat, repeat-x, repeat-y;
-  background-position: center 38px, center;
-  background-size: contain, cover;
-  padding: 0px, 0px;
-  margin: 0px, 0px, 0px, 0px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,.25)0,rgba(0,0,0,.25)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: center,center 60px,top;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   justify-content: center;
+
+
+  
 }
 
 .new-collection {
@@ -279,7 +276,7 @@ p {
 /* Here starts another section of the website*/
 
 .carousel-cell {
-  width: 100%;
+  width: 25%;
   text-align: center;
 }
 .carousel-cell h3 {
@@ -302,6 +299,11 @@ p {
   line-height: 2;
 
 }
+.email-form{
+  position: relative;
+  width: 50%;
+
+}
 .email-box {
   display: block;
   margin: 2rem auto 0;
@@ -316,22 +318,22 @@ input[type="email"] {
   border-radius: 25px;
   position: relative;
   font-size: 1rem;
-
 }
+
+
 
 input[type="submit"] {
   background-color: #e2574c;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 400;
-    padding: 0.5rem 1.5rem;
-    position: absolute;
-    right: .6rem;
-    top: 0.4rem;
-    border-radius: 30px;
-    font-family: Raleway Web, sans-serif;
-    font-size: 1rem;
-
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  right: .25rem;
+  top: .30rem;
+  border-radius: 30px;
+  font-family: Raleway Web, sans-serif;
+  font-size: 1rem;
 }
 
 
@@ -400,21 +402,34 @@ input[type="submit"] {
 
 @media screen and (min-width: 600px) {
   .banner {
-    background-size: 250px 615px, contain;
-    position: relative;
-
-    height: 422px;
-    background-image: url(../images/banner-girl.png),
-      url(../images/flower-bkgd.jpg);
-    height: 500px;
-    background-repeat: no-repeat, no-repeat, repeat-x, repeat-y;
-    background-position: center 38px, center;
-    background-size: contain, cover;
-    padding: 0px, 0px;
-    margin: 0px, 0px, 0px, 0px;
+    background-size:cover, 150px 369px,cover;
+    height: 400px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.25)0,rgba(0,0,0,.25)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-position: center,center 60px, top;
+    padding: 0px;
+    margin: 0px;
     display: flex;
     justify-content: center;
-  }
+    background-repeat:  no-repeat, no-repeat, repeat-x;}
+
+    @media only screen and (min-width: 1240px){
+    .banner {
+        background-size: cover,250px 615px,contain;
+        height: 550px;
+        position: relative;}
+    
+        /*background-size: cover,150px 369px,cover;
+    height: 400px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.25)0,rgba(0,0,0,.25)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: center,center 60px,top;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;*/
+
+
+
   .container {
     max-width: 1240px;
     max-height: 1000px;
@@ -504,7 +519,7 @@ input[type="submit"] {
   .product-item:nth-child(6) {
     width: 50%;
   }
-
+@media screen and (min-width: 600px) {
   .carousel-cell {
     width: 25%;
   }
