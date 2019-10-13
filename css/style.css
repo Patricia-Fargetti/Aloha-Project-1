@@ -486,11 +486,7 @@ input[type="submit"] {
     justify-content: center;
     background-repeat:  no-repeat, no-repeat, repeat-x;}
 
-    @media only screen and (min-width: 1240px){
-    .banner {
-        background-size: cover,250px 615px,contain;
-        height: 550px;
-        position: relative;}
+   
     
         /*background-size: cover,150px 369px,cover;
     height: 400px;
@@ -553,7 +549,7 @@ input[type="submit"] {
     width: 10vmax;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end;}
 
   .fab {
     display: block;
@@ -574,12 +570,9 @@ input[type="submit"] {
   .pinterest-text {
     display: inline-block;
   }
-  /*@media only screen and (min-width: 600px){
-      .product-item{flex-basis: 50%;
-
-      }*/
+  
+      
       .product-categories {
-        display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -588,7 +581,7 @@ input[type="submit"] {
     border-left: 0;
     border-right: 4px solid #fff;
 }
-  }
+  
   .product-item:nth-child(2) {
     border-left: 4px solid #fff;
   }
@@ -600,11 +593,18 @@ input[type="submit"] {
   }
 
   .product-item:nth-child(5) {
-    flex-basis:  25%;
+    border-left: 4px solid #fff;
   }
   .product-item:nth-child(6) {
-    flex-basis:50%;
+    border-right: 0;
+    border-left: 4px solid #fff;
+
   }
+  .product-item.square{
+    flex-basis: 25%;
+
+  }
+  .product-item.rectangular{flex-basis: 50%;}
 @media screen and (min-width: 600px) {
   .carousel-cell {
     width: 25%;
@@ -613,13 +613,20 @@ input[type="submit"] {
   sign-up {
     display: flex;
     flex-direction: column;
-    padding: 0% 30%;
+    padding: 0% 30%;}
 
   .newsletter p {
     padding: 0 20%;
-
+  }
+  
   input[type="submit"]{
     right: 4.6rem;
     
   }
-
+  @media only screen and (min-width: 1240px){
+    .banner {
+        background-size: cover,250px 615px,contain;
+        height: 550px;
+        position: relative;}
+    }
+  
