@@ -82,8 +82,8 @@ img {
 
 .navigation-list {
   align-self: center;
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100px;
 }
 .navigation-list ul {
   border-top: 1px solid #d7d7d7;
@@ -599,10 +599,9 @@ item1,p {
   
  
      .navigation-list{
-      flex-basis: 60%;
-  
-align-items:center;
-justify-content:center;}
+      flex-basis: 40%;
+      align-items: center;
+      justify-content: center;}
     
     .navigation-list ul{
       border: 0px;
@@ -732,6 +731,18 @@ justify-content:center;}
     width: 50%;
   }
 
+  .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+  }
   sign-up {
     display: flex;
     flex-direction: column;
