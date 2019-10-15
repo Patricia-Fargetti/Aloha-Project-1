@@ -21,11 +21,12 @@ body{
   font-family: Raleway Web, sans-serif;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 2;}
 
 img {
-  max-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -74,7 +75,7 @@ img {
 .cart {
   align-self: flex-end;
   cursor: pointer;
-  flex: 0 1 50%;
+  
   text-align: right;
   width: 50px;
 }
@@ -169,13 +170,13 @@ section {
   text-transform: uppercase;
   position: absolute;
   text-align: center;
-  margin: 30px;
-  margin-left: -10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
+  transform: translate(50%, 35%);
+  left: -29%;
+  bottom: 30%;
+  top: 60%;
+  height: 150px;
+  width: 80%;}
+
 .spring {
   font-size: 40px;
   margin: 0;
@@ -199,14 +200,33 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.newsletter{
+  margin-bottom: 8px;
+}
 .newsletter h2 {
   text-align: center;
   font-family: Playfair Display Web, serif;
   
+  
   font-size: 2.4rem;
   font-style: italic;
 }
+.product-name a{
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  
+  font-size: 22px;
+  text-transform: uppercase;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  font-family: 'Raleway';
+  font-weight: 600;
 
+}
+.different-names{
+  position: relative;
+}
 .products {
  padding:0;
   
@@ -245,6 +265,7 @@ p {
   /*flex: 1 0 100%;*/
  
 }
+/* leave border left here for media queries*/
 .product-item:nth-child(1){border-right: 0;
   border-left: 0;
 
@@ -265,11 +286,9 @@ display: block;}
   background-size: cover,cover,50%;
 
 }
-
+/* leave this here for media queries*/
 .product-item:nth-child(2) {
- 
-  /* flex: 1 0 25%; */
- /* width: 50%;*/
+
  border-left: 0;
  
 }
@@ -281,8 +300,7 @@ display: block;}
   background-position:center,center, center;
   background-size: cover,cover,50%;
   
-  /* flex: 1 0 25%; */
-  /*width: 50%;*/
+  
 
   
 }
@@ -301,7 +319,7 @@ display: block;}
 
  
 }
-.product-item:nth-child(4) {
+.product-item:nth-child(4) { 
   border-left: 0;
 }
 
@@ -317,12 +335,14 @@ display: block;}
   text-align: center;
   
 }
-
-.product-item:nth-child(5) {border-right: 0; }
+/* Not adding any borders here -> */
+.product-item:nth-child(5) {
+  border-right: 0px;
+}
 
 
 .product-item:nth-child(6){border-right: 0;
-  border-left: 0;
+ border-left: 0px;
 
 }
 
@@ -348,10 +368,19 @@ display: block;}
 } */
 
 /* Here starts another section of the website*/
-
+.typeof{
+  font-size: .75rem;
+  margin-bottom: .75rem;
+  
+}
+.priceof , .typeof{
+  text-transform: uppercase;
+  color: #969696;
+}
 .carousel-cell {
-  width: 25%;
+  width: 100%;
   text-align: center;
+  padding: 3rem 2rem;
 }
 .carousel-cell h3 {
   color: #e2574c;
@@ -385,7 +414,7 @@ display: block;}
  
 }
 input[type="email"] {
-  padding: 1rem 1.75rem;
+  padding: .8rem 1.75rem;
   padding-right: 2px;
   width: 100%;
   border: 0;
@@ -401,7 +430,7 @@ input[type="submit"] {
   color: #fff;
   cursor: pointer;
   font-weight: 400;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 15px;
   position: absolute;
   right: .25rem;
   top: .30rem;
@@ -424,16 +453,41 @@ input[type="submit"] {
   display: inline-block;
 }
 /* footer*/
-.father {
+.info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #242424;
   color: white;
-  padding: 30px;
-  height: 60vmax;
+  padding: 0 2%;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+
 }
+.contact{line-height: 1.5;
+
+}
+item1,p {
+  font-size: 14px;
+}
+.phone-email{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.copyright.address,p {
+  margin-block-start: 0px;
+    margin-bottom: 0px;
+  text-align: center;
+}
+
+
+.address{
+  color: #969696;
+    text-align: center;
+}
+
 .footer-icons{
   list-style: none;
     display: flex;
@@ -445,9 +499,11 @@ input[type="submit"] {
 
 .item2{
   display: flex;
-  width: 10vmax;
+  width: 100%;
   flex-direction: row;
   align-self: center;
+      margin-top: 2rem;
+      justify-content: center;
  
 }
 
@@ -486,19 +542,16 @@ input[type="submit"] {
     justify-content: center;
     background-repeat:  no-repeat, no-repeat, repeat-x;}
 
-   
+    .logo-text {
     
-        /*background-size: cover,150px 369px,cover;
-    height: 400px;
-    background-image: linear-gradient(180deg,rgba(0,0,0,.25)0,rgba(0,0,0,.25)), url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    background-position: center,center 60px,top;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;*/
-
-
+    position: absolute;
+  }
+      .spring p{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
 
   .container {
     max-width: 1240px;
@@ -520,36 +573,86 @@ input[type="submit"] {
     font-family: Raleway Web, sans-serif;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 2;
    
   }
-
-  .aloha {
+  .website-header{
+    display: flex;
+    align-items: center;
+    
+    align-items: center;
+    padding: 1rem 0.5rem 0.5rem 1rem;}
+    .logo {align-self: flex-start;
+      flex: 0 0 0%;}
+    .aloha {
     order: 1;
     align-self: flex-start;
+    flex-basis: 20%;
   }
   .cart {
-    align-self: flex-end;
+    
+    order: 3;
+    
   }
-
-  .navigation-list {
-    order: 2;
+  
+  
+ 
+     .navigation-list{
+      flex-basis: 60%;
+  
+align-items:center;
+justify-content:center;}
+    
+    .navigation-list ul{
+      border: 0px;
+    padding-top: 0.5rem;
+    text-align: center;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-
-    display: inline;
-    word-spacing: 80px;
-    text-transform: uppercase;
-    height: auto;
-    width: 100%;
+    }
+  
+  
+  
+  
+    .info{
+    text-align: left;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .info .item1{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+  }
+  .item1{
+    display: inline-block;
+  }
+  .contact p{
+    text-align: left;
   }
   .item2 {
+   
     display: flex;
     width: 10vmax;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;}
+    justify-content: flex-end;
+    margin-right: 10%;}
+
+    .footer-icons,ul , li{
+      list-style: none;
+      float: right;
+    display: flex;
+    flex-direction: column;  
+    justify-content: right;
+    }
+    .social-name,a{ display: flex;
+
+    }
 
   .fab {
     display: block;
@@ -572,11 +675,24 @@ input[type="submit"] {
   }
   
       
-      .product-categories {
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        text-align: center; }
+  @media screen and (min-width: 600px){
+.product-name{    align-content: center;
+
+}
+.large{
+  left: 50%;
+}
+.different-names{top: 50%;
+  left: 50%;
+
+}
+        .product-categories {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+        }
+
   .product-item:nth-child(1) {
     border-left: 0;
     border-right: 4px solid #fff;
@@ -589,13 +705,15 @@ input[type="submit"] {
     border-right: 0;
   }
   .product-item:nth-child(4) {
-    border-left: 4px solid #fff;
+   
   }
 
   .product-item:nth-child(5) {
+    flex-basis:  25%;
     border-left: 4px solid #fff;
   }
   .product-item:nth-child(6) {
+    flex-basis:50%;
     border-right: 0;
     border-left: 4px solid #fff;
 
@@ -603,11 +721,15 @@ input[type="submit"] {
   .product-item.square{
     flex-basis: 25%;
 
+  } 
+  
+
   }
   .product-item.rectangular{flex-basis: 50%;}
-@media screen and (min-width: 600px) {
+
+  @media screen and (min-width: 600px) {
   .carousel-cell {
-    width: 25%;
+    width: 50%;
   }
 
   sign-up {
@@ -617,10 +739,12 @@ input[type="submit"] {
 
   .newsletter p {
     padding: 0 20%;
+    font-size: 18px;
   }
   
   input[type="submit"]{
-    right: 4.6rem;
+  
+    right: 0.2rem;
     
   }
   @media only screen and (min-width: 1240px){
@@ -628,5 +752,14 @@ input[type="submit"] {
         background-size: cover,250px 615px,contain;
         height: 550px;
         position: relative;}
+   
+    .logo-text {position: absolute;
+      transform: translate(50%, -100%);
+    
     }
-  
+    .carousel-cell {
+      width: 25%;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+  }

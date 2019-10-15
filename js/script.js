@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // options
     cellAlign: "left",
     wrapAround: true,
-    freeScroll: true
+    freeScroll: true,
+    autoPlay: 1200
   });
 });
 
@@ -17,6 +18,6 @@ emailForm.addEventListener("submit", function(event) {
   if (emailInput.value == "") {
     alert("Please,enter a valid value!");
   } else {
-    alert("thanks for subscribing!");
+    alert("Thanks for subscribing!");
   }
 });
