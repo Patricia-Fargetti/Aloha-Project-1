@@ -83,7 +83,7 @@ img {
 .navigation-list {
   align-self: center;
     height: auto;
-    width: 100px;
+    width: 100%;
 }
 .navigation-list ul {
   border-top: 1px solid #d7d7d7;
@@ -134,6 +134,8 @@ section {
 .description p {
   text-align: center;
   font-size: 1.15rem;
+  color: #2d2d2d;
+  font-family: Raleway Web, sans-serif;
 }
 
 /* header area */
@@ -193,7 +195,7 @@ section {
   line-height: 30px;
 }
 p {
-  font-family: Playfair Display, serif;
+  
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -546,7 +548,7 @@ item1,p {
     
     position: absolute;
   }
-      .spring p{
+      .spring,p{ font-size: 48px;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
@@ -570,7 +572,7 @@ item1,p {
 
   body{
     color: #2d2d2d;
-    font-family: Raleway Web, sans-serif;
+    font-family: Raleway web , sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 100;
@@ -600,6 +602,7 @@ item1,p {
  
      .navigation-list{
       flex-basis: 40%;
+      display: flex;
       align-items: center;
       justify-content: center;}
     
