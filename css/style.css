@@ -18,7 +18,7 @@ html {
 
 body{
   color: #2d2d2d;
-  font-family: Raleway Web, sans-serif;
+  font-family: Raleway Light, sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 100;
@@ -548,6 +548,20 @@ item1,p {
 }
 
 @media screen and (min-width: 600px) {
+  
+  .website-header container{ padding: 16px 16px;
+    width: 100%;}
+
+  .content{padding: 16px;}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+     z-index: 100;
+  }
+  .sticky + .content {
+    padding-top: 102px;}
+  
   .banner {
     background-size:cover, 150px 369px,cover;
     height: 400px;
@@ -571,7 +585,7 @@ item1,p {
       }
 
   .container {
-    max-width: 1240px;
+    width: 1240px;
     max-height: 1000px;
     background-color: white;
     margin: 0 auto; /*to center the element */
@@ -695,10 +709,15 @@ item1,p {
       
   @media screen and (min-width: 600px){
 .product-name{    align-content: center;
+  
 
 }
 .large{
   left: 50%;
+  
+}
+.product-name a{
+  font-size: 28px;
 }
 .different-names{top: 50%;
   left: 50%;
@@ -792,4 +811,16 @@ item1,p {
       text-align: center;
       padding: 3rem 2rem;
     }
+    .website-header container{ padding: 16px 16px;
+      width: 100%;}
+  
+    .content{padding: 16px;}
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+       z-index: 100;
+    }
+    .sticky + .content {
+      padding-top: 102px;}
   }
