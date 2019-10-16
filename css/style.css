@@ -79,6 +79,7 @@ img {
   text-align: right;
   width: 50px;
 }
+.navigation-list:hover{ color: #b64036;}
 
 .navigation-list {
   align-self: center;
@@ -103,8 +104,8 @@ img {
 }
 .navigation-list li a {
   text-decoration: none;
-  color: red;
-  font-weight: 100;
+  color: #e2574c;
+  font-weight: 500;
   font-family: Raleway Web, sans-serif;
 }
 section {
@@ -226,6 +227,14 @@ p {
   font-weight: 600;
 
 }
+.different-names:hover{
+  color: #ffcc99;
+}
+.large:hover{
+  color: #ffcc99;
+}
+
+
 .different-names{
   position: relative;
 }
@@ -378,6 +387,7 @@ display: block;}
 .priceof , .typeof{
   text-transform: uppercase;
   color: #969696;
+  font-size: 14px;
 }
 .carousel-cell {
   width: 100%;
@@ -471,6 +481,10 @@ input[type="submit"] {
 .contact{line-height: 1.5;
 
 }
+ .contact,p{
+  font-size: 14px;
+}
+
 item1,p {
   font-size: 14px;
 }
@@ -518,6 +532,7 @@ item1,p {
   color: white;
   text-decoration: none;
 }
+.social-name:hover{color: #e2574c;}
 
 .facebook-text {
   display: none;
@@ -635,6 +650,7 @@ item1,p {
   }
   .contact p{
     text-align: left;
+    font-size: 16px;
   }
   .item2 {
    
