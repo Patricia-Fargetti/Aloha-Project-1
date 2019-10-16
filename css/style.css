@@ -368,7 +368,6 @@ p {
 }
 /* Not adding any borders here -> */
 .product-item:nth-child(5) {
-  border-right: 0px;
 }
 
 .product-item:nth-child(6) {
