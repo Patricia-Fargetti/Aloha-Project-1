@@ -29,7 +29,13 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
 .container {
   max-width: 100%;
   background-color: white;
@@ -180,8 +186,7 @@ h3 {
   text-align: center;
   transform: translate(50%, 35%);
   left: -29%;
-  bottom: 30%;
-  top: 60%;
+  top: 30%;
   height: 150px;
   width: 80%;
 }
@@ -600,6 +605,13 @@ p {
 
   .logo-text {
     position: absolute;
+    /* left: -30%;
+    bottom: 30%;
+    top: 26%; */
+    left: -29%;
+    bottom: 30%;
+    top: 31%;
+
   }
   .spring,
   p {
@@ -609,6 +621,7 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+
 
   .container {
     width: 1240px;
@@ -821,9 +834,13 @@ p {
         position: relative;
       }
 
+      .small-description{
+        width: 100%;
+        margin: 0 auto;
+      }
       .logo-text {
         position: absolute;
-        transform: translate(50%, -100%);
+        /* transform: translate(50%, -100%); */
       }
       .carousel-cell {
         width: 25%;
